@@ -12,7 +12,7 @@ async def create_upload_file(file: UploadFile, lang: str | None = Form(None), st
     """
     :param file: 上传文件
     :param lang: zh-Hans, en-US
-    :param stream: 1 或者其它
+    :param stream: 是否返回文件流。 1-返回文件流 其它值返回识别结果
     :return:
     """
     if lang is not None:
